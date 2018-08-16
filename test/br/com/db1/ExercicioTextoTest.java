@@ -49,7 +49,8 @@ public class ExercicioTextoTest {
 	public void nomeDepois3LetraTest() 
 	{
 		ExercicioTexto exerciciotexto = new ExercicioTexto();
-		assertEquals("nardo Takashi Miyano",exerciciotexto.nomeDepois3Letra("Leonardo Takashi Miyano"));	
+		assertEquals("nardo Takashi Miyano",exerciciotexto.nomeDepois3Letra("Leonardo Takashi Miyano"));
+		
 	}
 	
 	@Test
@@ -58,5 +59,32 @@ public class ExercicioTextoTest {
 		ExercicioTexto exerciciotexto = new ExercicioTexto();
 		assertEquals("yano",exerciciotexto.nome4UltimasLetras("Leonardo Takashi Miyano"));
 	}
-
+	
+	@Test
+	public void substituir1PalavraTest()
+	{
+		ExercicioTexto exerciciotexto = new ExercicioTexto();
+		assertEquals("Aluno/Aluna Takashi Miyano",exerciciotexto.substituir1Palavra("Leonardo Takashi Miyano"));
+	}
+	
+	@Test
+	public void dividirPalavraTest()
+	{
+		ExercicioTexto exerciciotexto = new ExercicioTexto();
+		assertEquals("banana maçã melancia",exerciciotexto.dividirPalavra("banana,maçã,melancia"));
+	}
+	
+	@Test
+	public void exibeVogaisTest()
+	{
+		ExercicioTexto exerciciotexto = new ExercicioTexto();
+		assertEquals(9,exerciciotexto.exibeVogais("banana,maça,melancia"),0);
+	}
+	
+	@Test
+	public void inverterTextoTest()
+	{
+		ExercicioTexto exerciciotexto = new ExercicioTexto();
+		assertEquals("odranoel",exerciciotexto.inverterTexto("leonardo"));
+	}
 }

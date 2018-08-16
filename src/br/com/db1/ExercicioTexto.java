@@ -4,27 +4,22 @@ public class ExercicioTexto {
 	
 	public String maiusculas(String texto) 
 	{
-		return texto.toUpperCase();
-		
+		return texto.toUpperCase();		
 	}
 	
 	public String minisculas(String texto) 
 	{
-		return texto.toLowerCase();
-		
-		
+		return texto.toLowerCase();			
 	}
 	
 	public Integer numeroDeLetras(String texto) 
 	{
-		return texto.length();
-		
+		return texto.length();		
 	}
 	
 	public Integer numeroDeLetrasComEspaco(String texto) 
 	{
-		return texto.length();
-		
+		return texto.length();		
 	}
 	
 	public Integer numeroDeLetrasSemEspaco(String texto) 
@@ -42,8 +37,34 @@ public class ExercicioTexto {
 		return texto.substring(texto.length()-4);
 	}
 	
+	public String substituir1Palavra(String texto)
+	{	
+		String primeiraPalavra = texto.replaceFirst(texto.substring(texto.indexOf(" ")), "");
+		return texto.replace(primeiraPalavra, "Aluno/Aluna");
+	}
 	
+	public String dividirPalavra(String texto)
+	{	
+		return texto.replace(",", " ");
+	}
 	
+	public Integer exibeVogais(String texto)
+	{	
+		int vogais = 0;		
+		for (int i = 0; i < texto.length(); i++) {
+			char letra = texto.toLowerCase().charAt(i);
+			if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
+				vogais++;
+		}	
+		return vogais++;		
+	}
+	
+	public String inverterTexto(String texto)
+	{
+		String inverter = new StringBuilder(texto).reverse().toString();
+		
+		return inverter;
+	}
 	
 	
 	
