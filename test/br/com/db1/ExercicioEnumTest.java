@@ -2,12 +2,14 @@ package br.com.db1;
 
 import org.junit.Test;
 
+import br.com.db1.type.EstadosBrasileiros;
+
 public class ExercicioEnumTest {
 
 	@Test
 	public void retornaEstadosTest() {	
 		for (EstadosBrasileiros estados : EstadosBrasileiros.values()) {
-			System.out.println(estados.getNome().toString());
+			//System.out.println(estados.getNome().toString());
 		}
 	}
 
