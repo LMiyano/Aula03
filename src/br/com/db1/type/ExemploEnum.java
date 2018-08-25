@@ -4,9 +4,13 @@ public class ExemploEnum {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(TipoLogradouro.RUA);
-		System.out.println(TipoLogradouro.PRACA.siglaLogradouro);
-		System.out.println(TipoLogradouro.PRACA.descricaoLogradouto);
+		System.out.println(TipoLogradouro.AEROPORTO);
+		System.out.println(TipoLogradouro.ACESSO.siglaLogradouro);
+		System.out.println(TipoLogradouro.ALAMEDA.descricaoLogradouto);
+		
+		
+		
+		
 	}
 
 }

@@ -9,9 +9,9 @@ import br.com.db1.type.TipoLogradouro;
 public class ExercicioTipoLogradouroTest {
 	
 	@Test
-	private void tipoLogradouroTest() {
+	public void tipoLogradouroTest() {
 	
-		assertEquals("R", TipoLogradouro.RUA.getSiglaLogradouro());
+		assertEquals("AC", TipoLogradouro.ACESSO.getSiglaLogradouro());
 
 	}
 
